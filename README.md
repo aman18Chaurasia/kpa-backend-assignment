@@ -97,8 +97,7 @@ uvicorn main:app --reload
 
 ## 📹 Project Walkthrough
 
-👉 Video Demo: [aman_kpa_assignment_demo.mp4](./aman_kpa_assignment_demo.mp4)
-
+👉 Video Demo: https://drive.google.com/file/d/1pFtyGru9VeEjZ9BAze6654pUrrkvd4RY/view?usp=sharing
 
 ---
 
