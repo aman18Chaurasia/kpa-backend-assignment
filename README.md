@@ -1,46 +1,111 @@
-# KPA Backend Assignment
+# KPA Backend Assignment - FastAPI Implementation
 
-Follow the README steps to run this FastAPI project.
-# KPA Backend Assignment
+## 🔧 Tech Stack
 
-## 🚀 Setup Instructions
+- **Backend Framework**: FastAPI
+- **Database**: SQLite (via SQLAlchemy ORM)
+- **Language**: Python 3.10+
+- **API Documentation**: Swagger UI (`/docs`)
+
+---
+
+## 📋 Implemented APIs
+
+Implemented two API endpoints each for **Bogie** and **Wheel** forms based on the provided Postman collection.
+
+### 🚆 Bogie Form
+
+- `POST /api/forms/`
+
+  - **Payload**: `{ "name": "string", "part_number": "string" }`
+  - **Function**: Creates a new bogie form entry.
+
+- `GET /api/forms/`
+
+  - **Function**: Fetches all bogie form entries.
+
+### 🛞 Wheel Form
+
+- `POST /api/forms/wheel/`
+
+  - **Payload**: `{ "inspector_name": "string", "wheel_number": "string" }`
+  - **Function**: Creates a new wheel form entry.
+
+- `GET /api/forms/wheel/`
+
+  - **Function**: Fetches all wheel form entries.
+
+---
+
+## ⚙️ Setup Instructions
+
+1. **Clone the repository**
 
 ```bash
-git clone <your-repo-url>
-cd kpa_backend_assignment
+git clone <your-repo-link>
+cd <repo-folder>
+```
+
+2. **Create a virtual environment and activate it**
+
+```bash
 python -m venv venv
-source venv/bin/activate  # on Windows: venv\Scripts\activate
+source venv/bin/activate  # For Linux/macOS
+venv\Scripts\activate    # For Windows
+```
+
+3. **Install dependencies**
+
+```bash
 pip install -r requirements.txt
-cp .env.example .env  # Update credentials in .env
-uvicorn app.main:app --reload
-🛠️ Tech Stack
-FastAPI
+```
 
-PostgreSQL
+4. **Run the application**
 
-SQLAlchemy
+```bash
+uvicorn main:app --reload
+```
 
-Pydantic
+5. **Access the API Docs**
 
-Uvicorn
+- Navigate to: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
-📌 APIs Implemented
-1. Root Endpoint
-GET / – returns a health check JSON
+---
 
-2. Bogie Form
-POST /api/forms/bogie/
+## 📂 Folder Structure
 
-GET /api/forms/bogie/
+```
+.
+├── main.py              # Entry point for FastAPI app
+├── database.py          # DB connection and Base setup
+├── models.py            # SQLAlchemy models
+├── schemas.py           # Pydantic request/response schemas
+├── formdata.py          # API routes logic for Bogie and Wheel forms
+├── requirements.txt     # Python dependencies
+└── README.md            # Project documentation
+```
 
-3. Wheel Form
-POST /api/forms/wheel/
+---
 
-GET /api/forms/wheel/
+## 📌 Assumptions & Notes
 
-📎 Assumptions & Limitations
-Only basic validation has been implemented.
+- SQLite used for simplicity; can be swapped with PostgreSQL easily.
+- Minimal error handling implemented (FastAPI auto-validates schema).
+- Authentication was not implemented, per assignment focus.
 
-No authentication layer included.
+---
 
-DB schema assumes direct insert of data without relations for simplicity.
+## 📹 Project Walkthrough
+
+👉 Video Demo: [aman_kpa_assignment_demo.mp4](./aman_kpa_assignment_demo.mp4)
+
+
+---
+
+## 📬 Contact
+
+**Aman Chaurasia**\
+Email: [aman007chaurasia@gmail.com](mailto\:aman007chaurasia@gmail.com)\
+GitHub: [@aman18Chaurasia](https://github.com/aman18Chaurasia)\
+LinkedIn: [@aman-chaurasia](https://www.linkedin.com/in/aman-chaurasia-91443b263)
+

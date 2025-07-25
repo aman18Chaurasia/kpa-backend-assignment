@@ -1,0 +1,18 @@
+{
+	"info": {
+		"_postman_id": "5f1eaf89-d8eb-41a9-af4f-4b7833db7caf",
+		"name": "KPA Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40430997"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
