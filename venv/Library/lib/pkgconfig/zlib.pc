@@ -1,0 +1,13 @@
+prefix=D:/kpa_backend_assignment/venv/Library
+exec_prefix=D:/kpa_backend_assignment/venv/Library
+libdir=D:/kpa_backend_assignment/venv/Library/lib
+sharedlibdir=D:/kpa_backend_assignment/venv/Library/lib
+includedir=D:/kpa_backend_assignment/venv/Library/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
